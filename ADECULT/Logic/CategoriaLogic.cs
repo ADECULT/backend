@@ -1,4 +1,5 @@
-﻿using ADECULT.adecult;
+﻿
+using ADECULT.ADECULT;
 using ADECULT.Models;
 using System;
 using System.Collections.Generic;
@@ -12,14 +13,14 @@ namespace ADECULT.Logic
 
         public List<CategoriaMod> GetCategorias()
         {
-            var db = new addecultContext();
+            var db = new ADECULTContext();
             List<CategoriaMod> categoryList = new List<CategoriaMod>();
             foreach (Categoria cat in db.Categoria.ToList())
             {
                 categoryList.Add(new CategoriaMod
                 {
                     IdCategoria = cat.IdCategoria,
-                    NombreCaegoria = cat.NombreCaegoria,
+                    NombreCategoria = cat.NombreCategoria,
                     CategoriaIdCategoria = cat.CategoriaIdCategoria
                 }) ;
             }

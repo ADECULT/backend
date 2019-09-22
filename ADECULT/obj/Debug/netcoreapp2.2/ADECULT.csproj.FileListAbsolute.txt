@@ -12,3 +12,6 @@ C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\obj\Debug\netcoreapp2.2
 C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\obj\Debug\netcoreapp2.2\ADECULT.RazorTargetAssemblyInfo.cache
 C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\obj\Debug\netcoreapp2.2\ADECULT.dll
 C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\obj\Debug\netcoreapp2.2\ADECULT.pdb
+C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Jennifer\Desktop\ADECULT\codigo\ADECULT\ADECULT\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

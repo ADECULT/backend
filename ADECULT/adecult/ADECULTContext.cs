@@ -2,15 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ADECULT.adecult
+namespace ADECULT.ADECULT
 {
-    public partial class addecultContext : DbContext
+    public partial class ADECULTContext : DbContext
     {
-        public addecultContext()
+        public ADECULTContext()
         {
         }
 
-        public addecultContext(DbContextOptions<addecultContext> options)
+        public ADECULTContext(DbContextOptions<ADECULTContext> options)
             : base(options)
         {
         }
@@ -24,7 +24,7 @@ namespace ADECULT.adecult
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=genesis1991;database=addecult");
+                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=genesis1991;database=ADECULT");
             }
         }
 
@@ -36,7 +36,7 @@ namespace ADECULT.adecult
             {
                 entity.HasKey(e => e.IdCategoria);
 
-                entity.ToTable("categoria", "addecult");
+                entity.ToTable("categoria", "adecult");
 
                 entity.HasIndex(e => e.CategoriaIdCategoria)
                     .HasName("fk_categoria_categoria1_idx");
@@ -50,16 +50,15 @@ namespace ADECULT.adecult
                     .HasColumnName("categoria_idCategoria")
                     .HasColumnType("int(11)");
 
-                entity.Property(e => e.NombreCaegoria)
+                entity.Property(e => e.NombreCategoria)
                     .IsRequired()
-                    .HasColumnName("nombreCaegoria")
+                    .HasColumnName("nombreCategoria")
                     .HasMaxLength(45)
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.CategoriaIdCategoriaNavigation)
                     .WithMany(p => p.InverseCategoriaIdCategoriaNavigation)
                     .HasForeignKey(d => d.CategoriaIdCategoria)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_categoria_categoria1");
             });
 
@@ -67,7 +66,7 @@ namespace ADECULT.adecult
             {
                 entity.HasKey(e => e.IdCedula);
 
-                entity.ToTable("directorio", "addecult");
+                entity.ToTable("directorio", "adecult");
 
                 entity.Property(e => e.IdCedula)
                     .HasColumnName("idCedula")
@@ -129,7 +128,7 @@ namespace ADECULT.adecult
             {
                 entity.HasKey(e => new { e.DirectorioIdCedula, e.CategoriaIdCategoria });
 
-                entity.ToTable("directorio_has_categoria", "addecult");
+                entity.ToTable("directorio_has_categoria", "adecult");
 
                 entity.HasIndex(e => e.CategoriaIdCategoria)
                     .HasName("fk_Directorio_has_categoria_categoria1_idx");

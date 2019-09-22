@@ -8,7 +8,7 @@ namespace ADECULT.Models
     public class CategoriaMod
     {
         public int IdCategoria { get; set; }
-        public string NombreCaegoria { get; set; }
+        public string NombreCategoria { get; set; }
         public int CategoriaIdCategoria { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ADECULT.adecult
+namespace ADECULT.ADECULT
 {
     public partial class Categoria
     {
@@ -12,7 +12,7 @@ namespace ADECULT.adecult
         }
 
         public int IdCategoria { get; set; }
-        public string NombreCaegoria { get; set; }
+        public string NombreCategoria { get; set; }
         public int CategoriaIdCategoria { get; set; }
 
         public virtual Categoria CategoriaIdCategoriaNavigation { get; set; }

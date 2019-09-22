@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ADECULT.adecult
+namespace ADECULT.ADECULT
 {
     public partial class DirectorioHasCategoria
     {
