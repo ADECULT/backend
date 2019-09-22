@@ -1,4 +1,4 @@
-﻿using ADECULT.adecult;
+﻿using ADECULT.ADECULT;
 using ADECULT.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace ADECULT.Logic
     {
         public List<DirectorioMod> GetDirectorios()
         {
-            var db = new addecultContext();
+            var db = new ADECULTContext();
             List<DirectorioMod> directorioList = new List<DirectorioMod>();
             foreach (Directorio cat in db.Directorio.ToList())
             {
